@@ -1,0 +1,12 @@
+name: 'Disco Ball'
+description: 'Disco-balls a given pull request'
+inputs:
+  linkIndexTables:  
+    description: 'Whether or not to link index tables'
+    default: ''
+outputs:
+  patch:
+    description: 'The patch file, if needed'
+runs:
+  using: 'node20'
+  main: 'index.js'

@@ -1,0 +1,8 @@
+name: 'Provisional Violations'
+description: 'Checks a given pull request for provisional violations'
+outputs:
+  patch:
+    description: 'The patch file, if needed'
+runs:
+  using: 'node20'
+  main: 'index.js'

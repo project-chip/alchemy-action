@@ -5,7 +5,13 @@ inputs:
     description: 'Whether or not to link index tables'
     default: ''
 outputs:
-  patch:
+  disco_status:
+    description: 'The result of the disco run'
+  template_name:
+    description: 'The name of the template to use to render the comment'
+  patch_name:
+    description: 'The patch name, if needed'
+  patch_path:
     description: 'The patch file, if needed'
 runs:
   using: 'node20'

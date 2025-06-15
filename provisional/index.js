@@ -8,7 +8,7 @@ function runAlchemy() {
   const executable = `alchemy-action-${platform}-${arch}`;
   const path = `${__dirname}/../${executable}`;
   console.log("Running " + path);
-  const out = childProcess.spawnSync(path, ['provisional'], { cwd: `${__dirname}/..`, stdio: 'inherit' });
+  const out = childProcess.spawnSync(path, ['provisional'], { cwd: process.env.GITHUB_WORKSPACE, stdio: 'inherit' });
   process.exit(out.status);
 }
 

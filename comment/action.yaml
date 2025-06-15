@@ -1,0 +1,18 @@
+name: 'Comment'
+description: 'Renders a comment, optionally with a patch file'
+inputs:
+  template_name:
+     description: 'The name of the comment template'
+     default: '' 
+  patch_path:  
+    description: 'The path of a patch file'
+    default: ''
+  patch_url:  
+    description: 'The URL of a patch file to link to'
+    default: ''
+outputs:
+  comment:
+    description: 'The rendered comment'
+runs:
+  using: 'node20'
+  main: 'index.js'

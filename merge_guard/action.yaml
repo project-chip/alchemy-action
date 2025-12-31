@@ -1,5 +1,5 @@
-name: 'Provisional Violations'
-description: 'Checks a given pull request for provisional violations'
+name: 'Merge Violations'
+description: 'Checks a given pull request for merge violations'
 outputs:
   patch:
     description: 'The patch file, if needed'

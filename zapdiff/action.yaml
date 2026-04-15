@@ -1,0 +1,26 @@
+name: 'Zapdiff'
+description: 'Runs zap-diff command'
+inputs:
+  baseline-xml:
+    description: 'Path to baseline XML file or directory'
+    required: true
+  generated-xml:
+    description: 'Path to generated XML file or directory'
+    required: true
+  sdk-root:
+    description: 'Path to SDK root directory'
+    required: true
+  sdk-label:
+    description: 'Label for SDK'
+    default: 'SDK'
+  spec-label:
+    description: 'Label for Spec'
+    default: 'Spec'
+  gen-attributes:
+    description: 'Zap generation attributes'
+  spec-root:
+    description: 'Path to Spec root directory'
+    default: '.'
+runs:
+  using: 'node20'
+  main: 'index.js'

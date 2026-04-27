@@ -4,11 +4,11 @@ inputs:
   template_name:
      description: 'The name of the comment template'
      default: '' 
-  patch_path:  
-    description: 'The path of a patch file'
+  template_data:  
+    description: 'JSON string of template variables'
     default: ''
-  patch_url:  
-    description: 'The URL of a patch file to link to'
+  file_data:  
+    description: 'JSON string mapping keys to file paths'
     default: ''
 outputs:
   comment:
